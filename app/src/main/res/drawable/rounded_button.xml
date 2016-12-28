@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Pressed blue circle -->
+        <item android:bottom="3px" android:state_pressed="true">
+            <layer-list>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="25dp"/>
+                        <solid android:color="@color/colorFirst"/>
+                    </shape>
+                </item>
+            </layer-list>
+        </item>
+        <!-- Blue circle -->
+        <item android:bottom="3px">
+            <shape android:shape="rectangle">
+                <corners android:radius="25dp"/>
+                <solid android:color="@color/colorPrimaryDark"/>
+            </shape>
+        </item>
+    </selector>

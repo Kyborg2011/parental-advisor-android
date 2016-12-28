@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luceolab.parentaladvisor.views.MonitoringObjectActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monitoring_object_last_connection"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:paddingBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/monitoring_object_common_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionGroup="false"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_with_border"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transitionGroup="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_object_op_sys_icon"
+                    android:src="@drawable/ic_operation_system"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/activity_object_operation_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monitoring_object_coordinates_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionGroup="false"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_with_border"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monitoring_object_latitude"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monitoring_object_longtitude"
+                    android:textSize="14dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_on_map"
+                    android:id="@+id/monitoring_object_action_view_on_map"
+                    android:background="@color/colorFirst"
+                    android:textColor="@color/colorMainBackground"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monitoring_object_phone_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionGroup="false"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_with_border"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_object_phone_icon"
+                    android:src="@drawable/ic_phone"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/activity_object_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call"
+                    android:id="@+id/monitoring_object_action_call"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorMainBackground"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monitoring_object_battery_level_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionGroup="false"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_with_border"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_object_battery_level_icon"
+                    android:src="@drawable/ic_battery_level"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/activity_object_battery_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:transitionGroup="false"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_daily_history"
+                    android:id="@+id/monitoring_object_action_show_daily_history"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorMainBackground"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionGroup="false"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_with_border"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:transitionGroup="false"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    android:id="@+id/monitoring_object_action_edit"
+                    android:background="@drawable/bg_edit_action"
+                    android:textColor="@color/colorMainBackground"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:transitionGroup="false"
+                android:orientation="vertical"
+                android:layout_marginLeft="7dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove"
+                    android:id="@+id/monitoring_object_action_remove"
+                    android:background="@drawable/bg_remove_action"
+                    android:textColor="@color/colorMainBackground"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

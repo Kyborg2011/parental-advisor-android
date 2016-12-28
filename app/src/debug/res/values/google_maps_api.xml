@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=02:F2:E7:AA:6E:8A:61:60:67:8B:EC:D7:DD:BE:B8:D3:FD:2F:11:6E%3Bcom.luceolab.parentaladvisor
+
+    You can also add your credentials to an existing key, using this line:
+    02:F2:E7:AA:6E:8A:61:60:67:8B:EC:D7:DD:BE:B8:D3:FD:2F:11:6E;com.luceolab.parentaladvisor
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDcB_SVoET46XNkO502k1zlm2foV9E9Sk8
+    </string>
+</resources>

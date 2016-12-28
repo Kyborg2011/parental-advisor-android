@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luceolab.parentaladvisor.views.DashboardActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              map:cameraZoom="1"
+              map:mapType="normal"
+              map:uiCompass="false"
+              map:uiRotateGestures="true"
+              map:uiScrollGestures="true"
+              map:uiTiltGestures="true"
+              map:uiZoomControls="true"
+              map:uiZoomGestures="true"/>
+
+    <ImageButton android:id="@+id/add_object_but"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_alignParentTop="false"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentBottom="true"
+                 android:src="@drawable/ic_add_button"
+                 android:background="@drawable/rounded_button"
+                 android:scaleType="fitEnd"
+                 android:layout_margin="20dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dashboardProgressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Monitoring Person Module</string>
+    <string name="service_started">Monitoring service has started</string>
+    <string name="device_registration">Device registration</string>
+    <string name="device_registering_help">On phone number (on which you registered in app)
+        has been sent an SMS with a verification code.
+        Please, enter it below.</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+</resources>

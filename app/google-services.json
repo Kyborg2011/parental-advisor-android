@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "862359379268",
+    "firebase_url": "https://project-1854793073800692653.firebaseio.com",
+    "project_id": "project-1854793073800692653",
+    "storage_bucket": "project-1854793073800692653.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862359379268:android:4650c50f2ceaeb70",
+        "android_client_info": {
+          "package_name": "com.luceolab.parentaladvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862359379268-mfep5pp7jqthgbj3ef3auk5qlpo96lbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD85OyOH7N_uUw02e6i3aD_LbTBYmB9Is"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.luceolab.parentaladvisor.views.AddObjectActivity"
+    android:background="@color/colorMainBackground">
+
+    <EditText
+        android:id="@+id/full_name_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/full_name"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone_object"
+        android:phoneNumber="true"
+        android:hint="@string/phone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/object_apply_but"
+        android:text="Add"
+        style="@style/Base.TextAppearance.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:allowUndo="false"
+        android:textColor="@color/colorMainBackground"
+        android:textSize="23dp"
+        android:typeface="normal"
+        android:layout_gravity="top|center_horizontal"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:padding="7dp"
+        android:outlineProvider="background"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="true"
+        android:elegantTextHeight="true"
+        android:contextClickable="false"
+        android:clickable="true"
+        android:breakStrategy="simple"
+        android:textStyle="bold" />
+
+</LinearLayout>
